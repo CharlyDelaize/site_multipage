@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    background-image: url("../img/desert.jpg"); /*attention ici nous sommes dans le dossier css, les chemins ne sont pas les mêmes que dans l'index.html */
+}
+
+h1{
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+    color: peru;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 35px;
+    color: orangered;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+h3{
+    font-size: 22px;
+    color: orangered;
+    padding: 15px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+h4{
+    text-align: center;
+    margin-top: 30px;
+}
+
+blockquote{
+    font-style: italic;
+    font-size: 120%;
+}
+
+strong{
+    font-weight: bold;
+}
+
+
+/* ----------- HEADER INDEX ------------- */
+header{
+    background-color: skyblue;
+}
+
+#logo{
+    float: left;
+    width: 25%;
+    background-color: skyblue;
+    padding: 15px;
+    text-align: center;
+}
+
+#logo img{
+    width: 25%;
+    height: 50%;
+}
+
+#slogan{
+    float: left;
+    width: 50%;
+    background-color: skyblue;
+    padding-top: 50px;
+}
+
+#social{
+    float: left;
+    width: 25%;
+}
+
+#social i{
+    background-color: skyblue;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0; /* haut droite bas gauche */
+    display: block;
+}
+
+header a{
+    color: peru;
+    text-decoration: none;
+}
+
+/* ------------- DEBUT NAV ------------ */
+
+nav{
+    background-color: skyblue;
+    height: 70%;
+    border-bottom: 8px solid lightskyblue;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a{
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0px;
+    border: 2px solid lightblue;
+    background-color: lightskyblue;
+    color: peru;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.5s;
+}
+
+nav a:hover{
+    background-color: royalblue;
+    color: wheat;
+}
+
+.activ{
+    background-color: darkslategray;
+}
+
+/* ------------ FIN NAV ---------- */
+
+main{
+    background-color: rgba(128, 128, 128, 0.219);
+    width: 1000px;
+    margin: 0 auto;
+}
+
+aside{
+    height: 250px;
+    background-color: lightblue;
+}
+
+section{
+    margin-top: 50px;
+    padding: 20px;
+    background-color: palegoldenrod;
+}
+
+footer{
+    background-color: skyblue;
+    height: 30px;
+    text-align: right;
+    padding: 5px 10px;
+}
+
+/* ------------ DEBUT PAGE TEXTE ------------- */
+
+.oswald p{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ------------ DEBUT PAGE SELECTEUR ------------- */
+.select p{
+    color: red;
+}
+
+.select p:first-of-type, .select p:last-of-type{
+    color: orangered;
+}
+
+.select p:nth-of-type(5), .select p:nth-of-type(6){
+    color: darkorange;
+}
+
+.select div:not(.zoneB){
+    font-weight: bold;
+}
+
+.select .zoneA{
+    color: violet;
+}
+
+.select .zoneB{
+    color: peru;
+}
+
+.select .zoneB .couleurBleu{
+    color: blue;
+    font-size: 16px;
+}
+
+.select #zoneC{
+    color: yellowgreen;
+}
+
+.select #zoneD{
+    color: green;
+    font-size: 30px;
+    font-style: italic;
+}
