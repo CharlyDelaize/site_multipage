@@ -6,9 +6,9 @@
     <!-- C'est l type d'encodage des caractères (il en existe plusieurs) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom -->
-    <meta name="description" content="Les textes en HTML">
+    <meta name="description" content="Tableaux">
     <!-- Description sous le titre dans la recherche Google => ça sert pour le référencement -->
-    <title>Ma page textes</title>
+    <title>Tableaux</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> 
     <!-- Lien vers le CDN de Fontawesome-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -25,29 +25,31 @@
                 <button type="button">
                     <i class="fas fa-arrow-circle-up"></i>
                 </button>
-            </a>
             <img src="img/logo.png" alt="logo HTML CSS">
-        </div>        <div id="slogan">
+        </div>        
+        <div id="slogan">
             <h1>Mon premier site en HTML/CSS</h1>
-        </div>        <div id="social">
+        </div>        
+        <div id="social">
             <a href="http://www.instagram.com" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
             <a href="http://www.facebook.com" target="_blank">
                 <i class="fab fa-facebook-f"></i>
             </a>
-        </div>        <div class="clear"></div>
-    </header>    
+        </div>        
+        <div class="clear"></div>
+    </header>
     <nav>
         <!-- Zone de menu, les liens pour naviguer sur le site -->
         <div class="ancreNav">
             <a href="index.html">Structure</a>
-            <a href="textes.html" class="activ">Textes</a>
+            <a href="textes.html">Textes</a>
             <a href="selecteurs.html">Selecteurs</a>
             <a href="images.html">Images</a>
             <a href="positions.html">Positions</a>
             <a href="zoning.html">Zoning</a>
-            <a href="tableaux.html">Tableaux</a>
+            <a href="tableaux.html"  class="activ">Tableaux</a>
             <a href="listes.html">Listes</a>
             <a href="liens_menu.html">Liens & menus</a>
             <a href="formulaires.html">Formulaires</a>
@@ -56,34 +58,55 @@
         </div>
     </nav>    
     <main>
-        <h2>Les textes</h2>
-        <section>
-            <h3>Titre de la première section</h3>
-            <blockquote>
-                <i class="fas fa-quote-left"></i>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex cumque et incidunt cum ipsum dignissimos molestiae vero quae magni maiores!
-                <i class="fas fa-quote-right"></i>
-            </blockquote>
+        <h2>Tableaux</h2>
+        <table class="tableau">
+            <caption>Vols Paris Rome <i class="fas fa-plane"></i></caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <td>02/08/2021</td>
+                    <td>03/08/2021</td>
+                    <td>04/08/2021</td>
+                </tr>
+            </thead>
 
-            <p>
-                <strong>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore praesentium voluptate non quisquam quas blanditiis qui cumque libero sunt dolorem, dolores reprehenderit itaque quidem rem officia. Culpa dolore sed veritatis, recusandae, quas omnis, autem qui exercitationem consequatur sint similique nobis voluptas fuga minima cumque nihil voluptatibus harum! Quibusdam, quam amet!
-                </strong>
-            </p>
-        </section>
+            <tfoot>
+                <tr>
+                    <th></th>
+                    <td>02/08/2021</td>
+                    <td>03/08/2021</td>
+                    <td>04/08/2021</td>
+                </tr>
+            </tfoot>
 
-        <section class="oswald">
-            <h3>Titre de la section numéro 2</h3>
-
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, qui, molestias a sunt maiores quas necessitatibus quibusdam dignissimos ut facere, expedita ullam mollitia libero odit deleniti? Earum, dignissimos sequi debitis autem enim ex facilis illo itaque eaque nihil architecto placeat voluptatem eos quas officia odio eum, veritatis numquam quis mollitia inventore nostrum! Voluptate sit eos nulla, eveniet architecto ipsam laborum.
-            </p>
-        </section>
+            <tbody>
+                <tr>
+                    <th rowspan="2">Air France</th>
+                    <td>Départ 10h - Arrivée 13h</td>
+                    <td>Départ 15h - Arrivée 18h</td>
+                    <td>Départ 17h - Arrivée 20h</td>
+                </tr>
+                <tr>
+                    <td>200€</td>
+                    <td>180€</td>
+                    <td>170€</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Alitatlia</th>
+                    <td>Départ 6h - Arrivée 9h</td>
+                    <td>Départ 13h - Arrivée 16h</td>
+                    <td>Départ 21h - Arrivée 00h</td>
+                </tr>
+                <tr>
+                    <td>120€</td>
+                    <td>150€</td>
+                    <td>100€</td>
+                </tr>
+            </tbody>
+        </table>
     </main>    
     <footer>
-        <small>
-            &copy; 2020 Le poleS
-        </small>
+        &copy; 2020 Le poleS<!-- Zone du bas, ex: liens administratifs, mentions légales, plan du site, CGU, CGV, contact, copyright ... -->
     </footer>
 </body>
 </html>
