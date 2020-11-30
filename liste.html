@@ -6,9 +6,9 @@
     <!-- C'est l type d'encodage des caractères (il en existe plusieurs) -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom -->
-    <meta name="description" content="Structure type du site, page d'accueil">
+    <meta name="description" content="liste">
     <!-- Description sous le titre dans la recherche Google => ça sert pour le référencement -->
-    <title>Ma page structure</title>
+    <title>Les Listes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> 
     <!-- Lien vers le CDN de Fontawesome-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -43,14 +43,14 @@
     <nav>
         <!-- Zone de menu, les liens pour naviguer sur le site -->
         <div class="ancreNav">
-            <a href="index.html" class="activ">Structure</a>
+            <a href="index.html">Structure</a>
             <a href="textes.html">Textes</a>
             <a href="selecteurs.html">Selecteurs</a>
             <a href="image.html">Images</a>
             <a href="position.html">Positions</a>
             <a href="zoning.html">Zoning</a>
             <a href="tableau.html">Tableaux</a>
-            <a href="liste.html">Listes</a>
+            <a href="liste.html" class="activ">Listes</a>
             <a href="liens_menu.html">Liens & menus</a>
             <a href="formulaires.html">Formulaires</a>
             <a href="multimedias.html">Multimedias</a>
@@ -58,15 +58,62 @@
         </div>
     </nav>    
     <main>
-    <!-- Contenu principal -->
-        <aside>
-            <!-- Contenu secondaire -->
-        </aside>        <section>
-            <div> 
-                <!-- Zone supplémentaire de contenu --> 
-            </div>            <span> <!-- Zone supplémentaire de contenu --> </span>            <article> 
-                <!-- Zone supplémentaire de contenu --> 
-            </article>
+        <h2>Les listes</h2>
+
+        <section>
+            <h3>Les listes non-ordonnées - ul</h3>
+            <ul class="fruits">
+                <li>
+                    <i class="fas fa-arrow-right"></i> Orange
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i> Fraise
+                </li>
+                <li>
+                    <i class="fas fa-arrow-right"></i> Poire
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Les listes ordonnées - ol</h3>
+            <ol>
+                <li>HTML / CSS</li>
+
+                <li>PHP / SQL</li>
+
+                <li>JS / JQUERY</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Les listes imbriquées</h3>
+            <ul class="imbrique">
+                <li class="europe">Europe
+                    <ul>
+                        <li>France</li>
+                        <li>Italie</li>
+                        <li>Espagne</li>
+                    </ul>
+                </li>
+                <li class="asie">Asie
+                    <ul>
+                        <li>Chine</li>
+                        <li>Japon</li>
+                        <li>Laos</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3>Les listes de définition</h3>
+            <dl>
+                <dt>F</dt>
+                <dd>Foxtrot</dd>
+                <dd>France</dd>
+                <dd>Food</dd>
+                <dd>F...</dd>
+            </dl>
         </section>
     </main>    
     <footer>
