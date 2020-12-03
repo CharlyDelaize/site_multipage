@@ -1,0 +1,130 @@
+<!DOCTYPE html> <!-- Permet de définir le langage utilisé -->
+<html lang="fr"> <!-- Indique aux navigateur dans quelle langue est le site -->
+<head>
+    <!-- Tête du document elle n'est pas visible sur le site -->
+    <meta charset="UTF-8">
+    <!-- C'est l type d'encodage des caractères (il en existe plusieurs) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom -->
+    <meta name="description" content="Formulaires">
+    <!-- Description sous le titre dans la recherche Google => ça sert pour le référencement -->
+    <title>Formulaires</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> 
+    <!-- Lien vers le CDN de Fontawesome-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">  
+    <!-- Lien vers les polices GoogleFont -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- Lien vers notre feuille de style -->
+</head>
+<body>
+        <!-- Corps du document -->    <header>
+        <!--Zone du haut, ex: bannières, slogan, logo ... -->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+            <img src="img/logo.png" alt="logo HTML CSS">
+        </div>        
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>        
+        <div id="social">
+            <a href="http://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>        
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <!-- Zone de menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="textes.html">Textes</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="liste.html">Listes</a>
+            <a href="liens_menu.html">Liens & menus</a>
+            <a href="formulaires.html" class="activ">Formulaires</a>
+            <a href="multimedias.html">Multimedias</a>
+            <a href="animations.html">Animations</a>
+        </div>
+    </nav>    
+    <main>
+        <section class="formulaire">
+            <form action="urlDeDestination" methode="post" enctype="multipart/form-data">
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" id="pseudo" required>
+                <br>                
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" placeholder="Tapez votre prénom">
+                <br>
+                <label for="mdp">Mot de passe</label>
+                <input type="password" id="mdp">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <br>
+                <label for="cv">Cv</label>
+                <input type="file" id="cv">
+                <br>
+                <p>Quel sont vos fruits favoris ?</p>
+                <label for="orange">Orange</label>
+                <input type="checkbox" id="orange" value="orange" checked>
+                <label for="faise">Fraise</label>
+                <input type="checkbox" id="faise" value="Fraise">
+                <label for="poire">Poire</label>
+                <input type="checkbox" id="poire" value="poire">
+                <label for="cp">Code Postal</label>
+                <input type="text" id="cp" pattern="[0-9]{5}" title="5 chiffres de 0 à 9"><!--maxlenght="5"-->  
+                <br><label for="message">Message</label>
+                <textarea id="message" cols="25" rows="5"></textarea>
+                <input type="submit" id="envoyer" value="Envoyer">
+                <input type="reset" id="annuler" value="Annuler">                <!--
+                    <fieldset>
+                        <label for="pseudo">Pseudo *</label>
+                        <input type="text" id="pseudo" id="pseudo" required>
+                    </fieldset>                    <br>                    <label for="prenom">
+                        Prénom
+                        <input type="text" id="prenom" id="prenom" placeholder="Tapez votre prénom">
+                    </label>                    <br>                    <fieldset>
+                        <label for="mdp">Mot de passe
+                            <input type="password" id="mdp">
+                        </label>                        <label for="email">Email
+                            <input type="email" id="email">
+                        </label>
+                    </fieldset>                    <button type="submit">Envoyer le message</button>
+                -->            
+            </form>
+
+                                    <!--
+                <fieldset>
+                    <label for="pseudo">Pseudo *</label>
+                    <input type="text" name="pseudo" required>
+                </fieldset>                <br>                <label for="prenom">
+                    Prénom
+                    <input type="text" name="prenom" placeholder="Tapez votre prénom">
+                </label>
+                <br>                <fieldset>
+                    <label for="mdp">Mot de passe
+                        <input type="password" name="mdp">
+                    </label>                    <label for="email">Email
+                        <input type="email" name="email">
+                    </label>
+                </fieldset>
+                -->
+            </form>
+        </section>
+    </main>    
+    <footer>
+        &copy; 2020 Le poleS<!-- Zone du bas, ex: liens administratifs, mentions légales, plan du site, CGU, CGV, contact, copyright ... -->
+    </footer>
+</body>
+</html>

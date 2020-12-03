@@ -1,0 +1,98 @@
+<!DOCTYPE html> <!-- Permet de définir le langage utilisé -->
+<html lang="fr"> <!-- Indique aux navigateur dans quelle langue est le site -->
+<head>
+    <!-- Tête du document elle n'est pas visible sur le site -->
+    <meta charset="UTF-8">
+    <!-- C'est l type d'encodage des caractères (il en existe plusieurs) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Indique au navigateur que la largeur de la page fait la largeur de l'écran et qu'il n'y a aucun zoom -->
+    <meta name="description" content="Multimedia">
+    <!-- Description sous le titre dans la recherche Google => ça sert pour le référencement -->
+    <title>Multimédia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" /> 
+    <!-- Lien vers le CDN de Fontawesome-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">  
+    <!-- Lien vers les polices GoogleFont -->
+    <link rel="stylesheet" href="css/style.css"> 
+    <!-- Lien vers notre feuille de style -->
+</head>
+<body>
+        <!-- Corps du document -->    <header>
+        <!--Zone du haut, ex: bannières, slogan, logo ... -->
+        <div id="logo">
+            <a href="#logo">
+                <button type="button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </button>
+            <img src="img/logo.png" alt="logo HTML CSS">
+        </div>        
+        <div id="slogan">
+            <h1>Mon premier site en HTML/CSS</h1>
+        </div>        
+        <div id="social">
+            <a href="http://www.instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="http://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>        
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <!-- Zone de menu, les liens pour naviguer sur le site -->
+        <div class="ancreNav">
+            <a href="index.html">Structure</a>
+            <a href="textes.html">Textes</a>
+            <a href="selecteurs.html">Selecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Positions</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="liste.html">Listes</a>
+            <a href="liens_menu.html">Liens & menus</a>
+            <a href="formulaires.html">Formulaires</a>
+            <a href="multimedias.html" class="activ">Multimedias</a>
+            <a href="animations.html">Animations</a>
+        </div>
+    </nav>    
+    <main>
+        <h2>Les multimédias</h2>
+        <section class="videoFond">
+            <h3>Vidéo en fond</h3>
+
+            <div class="videoTexte">
+                <video autoplay loop> <!-- autoplay fonctionne sur Firefox, sur Chrome, il faut mettre "controls" à la place de "autoplay"-->
+                    <source src="video/videoBackground.webm" type="video/webm"></source>
+                </video>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel cupiditate ab voluptate ut culpa nisi, molestias, dolorum nostrum, porro pariatur dolor. Similique corporis qui blanditiis, beatae ullam placeat, debitis eum, illum quae aspernatur culpa voluptas saepe. Ipsam adipisci esse corrupti distinctio possimus, dolorem labore. Deserunt maiores, est ratione iusto itaque vel, deleniti numquam, temporibus amet excepturi doloribus! Nulla et nobis quod praesentium repudiandae ipsum, eligendi soluta porro omnis exercitationem blanditiis corporis iure tempora fuga quam pariatur. Corporis reiciendis ipsum voluptates, est perferendis reprehenderit. Animi excepturi vero ullam! Vitae harum dolore a vel voluptatem praesentium earum doloremque ipsam corporis architecto!
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3>Lien Youtube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rnSMPq3VYVU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section>
+            <h3></h3>
+            <h4></h4>
+            <br>
+            <audio src="audio/son.mp3" controls></audio>
+
+            <h4>Format Ogg</h4>
+            <br>
+            <audio src="audio/son.ogg" controls></audio>
+        </section>
+
+        <section>
+            <h3>Google Maps</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6393403937627!2d2.1279831512731398!3d48.88415157918836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e662e90e09f16d%3A0x5f7577522fcced82!2sRue%20de%20Verdun%2C%2078110%20Le%20V%C3%A9sinet!5e0!3m2!1sfr!2sfr!4v1606992702082!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </section>
+    </main>    
+    <footer>
+        &copy; 2020 Le poleS<!-- Zone du bas, ex: liens administratifs, mentions légales, plan du site, CGU, CGV, contact, copyright ... -->
+    </footer>
+</body>
+</html>
